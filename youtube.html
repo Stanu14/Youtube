@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Frontend</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .video-thumbnail {
+      background-color: #ccc;
+      height: 200px;
+    }
+    video{
+            width: 100%;
+    }
+    .card-body{
+            margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#sidebarMenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand text-danger fw-bold" href="#">YouTube</a>
+      <form class="d-none d-sm-flex mx-auto w-50">
+        <input class="form-control rounded-start-pill" type="search" placeholder="Search" />
+        <button class="btn btn-outline-secondary rounded-end-pill" type="submit">🔍</button>
+      </form>
+      <div class="d-flex">
+        
+           <button class="btn btn-outline-dark"> <i class="fa-solid fa-bell"></i></button>
+           <button class="btn btn-outline-dark">👤</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="position-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"><i class="fas fa-home me-2"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-fire me-2"></i>Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-play me-2"></i>Subscriptions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-photo-video me-2"></i>Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-history me-2"></i>History</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
+        <div class="row g-4">
+         
+          <div class="col-sm-6 col-lg-4">
+            <div class="card">
+              <div class="video-thumbnail">
+                 <video autoplay controls>
+                  <source src="video/sample.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Video Title</h5>
+                <p class="card-text text-muted">Channel Name</p>
+              </div>
+            </div>
+          </div>
+         
+          
+          <div class="col-sm-6 col-lg-4">
+            <div class="card">
+              <div class="video-thumbnail">
+
+                 <video autoplay controls>
+                  <source src="video/sample1.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Video Title</h5>
+                <p class="card-text text-muted">Channel Name</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card">
+              <div class="video-thumbnail">
+
+                 <video autoplay controls>
+                  <source src="video/sample4.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Video Title</h5>
+                <p class="card-text text-muted">Channel Name</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card">
+              <div class="video-thumbnail">
+
+                 <video autoplay controls>
+                  <source src="video/sample2.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Video Title</h5>
+                <p class="card-text text-muted">Channel Name</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card">
+              <div class="video-thumbnail">
+
+                 <video autoplay controls>
+                  <source src="video/sample3.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Video Title</h5>
+                <p class="card-text text-muted">Channel Name</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card">
+              <div class="video-thumbnail">
+
+                 <video autoplay controls>
+                  <source src="video/sample4.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Video Title</h5>
+                <p class="card-text text-muted">Channel Name</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card">
+              <div class="video-thumbnail">
+
+                 <video autoplay controls>
+                  <source src="video/sample5.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Video Title</h5>
+                <p class="card-text text-muted">Channel Name</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card">
+              <div class="video-thumbnail">
+
+                 <video autoplay controls>
+                  <source src="video/sample6.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Video Title</h5>
+                <p class="card-text text-muted">Channel Name</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card">
+              <div class="video-thumbnail">
+
+                 <video autoplay controls>
+                  <source src="video/sample7.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Video Title</h5>
+                <p class="card-text text-muted">Channel Name</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
